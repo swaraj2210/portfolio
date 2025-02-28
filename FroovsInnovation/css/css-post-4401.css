@@ -1,0 +1,36 @@
+.elementor-4401 .elementor-element.elementor-element-ed16462{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:0px 0px;--row-gap:0px;--column-gap:0px;--margin-top:100px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:60px;--padding-bottom:80px;--padding-left:15px;--padding-right:15px;}.elementor-4401 .elementor-element.elementor-element-2ccc5aa{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;}.elementor-widget-text-editor{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-4401 .elementor-element.elementor-element-23f7599 > .elementor-widget-container{margin:0px 0px 15px 0px;}.elementor-4401 .elementor-element.elementor-element-23f7599{color:#807777;font-family:"AvenirLTStd-Book", Sans-serif;font-size:18px;font-weight:400;line-height:24px;}.elementor-4401 .elementor-element.elementor-element-cbe902b > .elementor-widget-container{margin:0px 0px 15px 0px;padding:0px 40px 0px 0px;}.elementor-4401 .elementor-element.elementor-element-cbe902b{color:#958F93;font-family:"AvenirLTStd-Book", Sans-serif;font-size:18px;font-weight:400;line-height:24px;}:root{--page-title-display:none;}@media(max-width:1200px){.elementor-4401 .elementor-element.elementor-element-2ccc5aa{--padding-top:10px;--padding-bottom:10px;--padding-left:10px;--padding-right:100px;}.elementor-4401 .elementor-element.elementor-element-23f7599 > .elementor-widget-container{padding:0px 0px 0px 0px;}.elementor-4401 .elementor-element.elementor-element-cbe902b > .elementor-widget-container{padding:0px 0px 0px 0px;}}@media(max-width:1024px){.elementor-4401 .elementor-element.elementor-element-ed16462{--margin-top:80px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;}.elementor-4401 .elementor-element.elementor-element-2ccc5aa{--padding-top:10px;--padding-bottom:10px;--padding-left:10px;--padding-right:40px;}.elementor-4401 .elementor-element.elementor-element-23f7599{line-height:1.4em;}.elementor-4401 .elementor-element.elementor-element-cbe902b{line-height:1.4em;}}@media(max-width:767px){.elementor-4401 .elementor-element.elementor-element-ed16462{--margin-top:15px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:60px;--padding-bottom:0px;--padding-left:15px;--padding-right:15px;}.elementor-4401 .elementor-element.elementor-element-2ccc5aa{--padding-top:10px;--padding-bottom:10px;--padding-left:10px;--padding-right:10px;}}@media(min-width:768px){.elementor-4401 .elementor-element.elementor-element-2ccc5aa{--width:100%;}}/* Start custom CSS for text-editor, class: .elementor-element-23f7599 */.content-sec-top h1{font-family: "AvenirLTStd-Book", Sans-serif; color: #000000; font-size: 60px; font-weight: 400; text-align:center; margin-bottom: 30px; margin-top: 0px;}
+
+.content-sec-top h2{font-family: "AvenirLTStd-Book", Sans-serif; color: #000000; font-size: 44px; font-weight: 400; line-height: 1.2em; margin-top:60px; margin-bottom:10px;}
+
+.content-sec-top p{margin-bottom: 0px;}
+
+.content-sec-top a{color: blue;}
+
+
+@media screen and (max-width: 600px) {
+    
+h1{font-size: 40px !important;}
+
+h2{font-size: 30px !important;}
+
+h3{font-size: 20px  !important;}
+    
+}/* End custom CSS */
+/* Start custom CSS for text-editor, class: .elementor-element-cbe902b */.content-sec h2{font-family: "AvenirLTStd-Book", Sans-serif; color: #000000; font-size: 44px; font-weight: 400; line-height: 1.2em; margin-top: 45px; margin-bottom: 10px;}
+
+.content-sec h3{font-family: "AvenirLTStd-Black", Sans-serif; color: #000000; font-size: 24px; font-weight: 900; line-height: 1.2em; margin-bottom: 10px; margin-top:0px; padding-top:15px;}
+
+.content-sec p{margin-bottom: 15px;}/* End custom CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'AvenirLTStd-Book';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('../fonts/03-AvenirLTStd-Book.eot');
+	src: url('../fonts/03-AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/03-AvenirLTStd-Book.woff2') format('woff2'),
+		url('../fonts/03-AvenirLTStd-Book.woff') format('woff'),
+		url('../fonts/03-AvenirLTStd-Book.ttf') format('truetype'),
+		url('https://esuccess.ai/wp-content/uploads/2024/03/AvenirLTStd-Book.svg#AvenirLTStd-Book') format('svg');
+}
+/* End Custom Fonts CSS */
