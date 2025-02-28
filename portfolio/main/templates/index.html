@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/icomoon-style.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/tiny-slider.css">
+	<link rel="stylesheet" href="css/glightbox.min.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="dns-prefetch" href="//secure.gravatar.com">
+	<link rel="dns-prefetch" href="//stats.wp.com">
+	<link rel="dns-prefetch" href="//widgets.wp.com">
+	<link rel="dns-prefetch" href="//jetpack.wordpress.com">
+	<link rel="dns-prefetch" href="//s0.wp.com">
+	<link rel="dns-prefetch" href="//public-api.wordpress.com">
+	<link rel="dns-prefetch" href="//0.gravatar.com">
+	<link rel="dns-prefetch" href="//1.gravatar.com">
+	<link rel="dns-prefetch" href="//2.gravatar.com">
+	<link rel="preconnect" href="//i0.wp.com">
+	<link rel="preconnect" href="//c0.wp.com">
+	<link rel="alternate" type="application/rss+xml" title="eSuccess AI Technologies &raquo; Feed" href="https://esuccess.ai/feed/">
+	<link rel="alternate" type="application/rss+xml" title="eSuccess AI Technologies &raquo; Comments Feed" href="https://esuccess.ai/comments/feed/">
+    <link rel="stylesheet" id="premium-addons-css" href="css/min-css-premium-addons.min.css" media="all">
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="jetpack-layout-grid-css" href="css/layout-grid-style.css" media="all">
+<link rel="stylesheet" id="mediaelement-css" href="https://c0.wp.com/c/6.7.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="https://c0.wp.com/c/6.7.1/wp-includes/js/mediaelement/wp-mediaelement.min.css" media="all">
+<style id="jetpack-sharing-buttons-style-inline-css">
+.jetpack-sharing-buttons__services-list{display:flex;flex-direction:row;flex-wrap:wrap;gap:0;list-style-type:none;margin:5px;padding:0}.jetpack-sharing-buttons__services-list.has-small-icon-size{font-size:12px}.jetpack-sharing-buttons__services-list.has-normal-icon-size{font-size:16px}.jetpack-sharing-buttons__services-list.has-large-icon-size{font-size:24px}.jetpack-sharing-buttons__services-list.has-huge-icon-size{font-size:36px}@media print{.jetpack-sharing-buttons__services-list{display:none!important}}.editor-styles-wrapper .wp-block-jetpack-sharing-buttons{gap:0;padding-inline-start:0}ul.jetpack-sharing-buttons__services-list.has-background{padding:1.25em 2.375em}
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--albert-sans: 'Albert Sans', sans-serif;--wp--preset--font-family--alegreya: Alegreya, serif;--wp--preset--font-family--arvo: Arvo, serif;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda', serif;--wp--preset--font-family--bricolage-grotesque: 'Bricolage Grotesque', sans-serif;--wp--preset--font-family--cabin: Cabin, sans-serif;--wp--preset--font-family--chivo: Chivo, sans-serif;--wp--preset--font-family--commissioner: Commissioner, sans-serif;--wp--preset--font-family--cormorant: Cormorant, serif;--wp--preset--font-family--courier-prime: 'Courier Prime', monospace;--wp--preset--font-family--crimson-pro: 'Crimson Pro', serif;--wp--preset--font-family--dm-mono: 'DM Mono', monospace;--wp--preset--font-family--dm-sans: 'DM Sans', sans-serif;--wp--preset--font-family--dm-serif-display: 'DM Serif Display', serif;--wp--preset--font-family--domine: Domine, serif;--wp--preset--font-family--eb-garamond: 'EB Garamond', serif;--wp--preset--font-family--epilogue: Epilogue, sans-serif;--wp--preset--font-family--fahkwang: Fahkwang, sans-serif;--wp--preset--font-family--figtree: Figtree, sans-serif;--wp--preset--font-family--fira-sans: 'Fira Sans', sans-serif;--wp--preset--font-family--fjalla-one: 'Fjalla One', sans-serif;--wp--preset--font-family--fraunces: Fraunces, serif;--wp--preset--font-family--gabarito: Gabarito, system-ui;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans', sans-serif;--wp--preset--font-family--ibarra-real-nova: 'Ibarra Real Nova', serif;--wp--preset--font-family--instrument-serif: 'Instrument Serif', serif;--wp--preset--font-family--inter: Inter, sans-serif;--wp--preset--font-family--josefin-sans: 'Josefin Sans', sans-serif;--wp--preset--font-family--jost: Jost, sans-serif;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville', serif;--wp--preset--font-family--libre-franklin: 'Libre Franklin', sans-serif;--wp--preset--font-family--literata: Literata, serif;--wp--preset--font-family--lora: Lora, serif;--wp--preset--font-family--merriweather: Merriweather, serif;--wp--preset--font-family--montserrat: Montserrat, sans-serif;--wp--preset--font-family--newsreader: Newsreader, serif;--wp--preset--font-family--noto-sans-mono: 'Noto Sans Mono', sans-serif;--wp--preset--font-family--nunito: Nunito, sans-serif;--wp--preset--font-family--open-sans: 'Open Sans', sans-serif;--wp--preset--font-family--overpass: Overpass, sans-serif;--wp--preset--font-family--pt-serif: 'PT Serif', serif;--wp--preset--font-family--petrona: Petrona, serif;--wp--preset--font-family--piazzolla: Piazzolla, serif;--wp--preset--font-family--playfair-display: 'Playfair Display', serif;--wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;--wp--preset--font-family--poppins: Poppins, sans-serif;--wp--preset--font-family--raleway: Raleway, sans-serif;--wp--preset--font-family--roboto: Roboto, sans-serif;--wp--preset--font-family--roboto-slab: 'Roboto Slab', serif;--wp--preset--font-family--rubik: Rubik, sans-serif;--wp--preset--font-family--rufina: Rufina, serif;--wp--preset--font-family--sora: Sora, sans-serif;--wp--preset--font-family--source-sans-3: 'Source Sans 3', sans-serif;--wp--preset--font-family--source-serif-4: 'Source Serif 4', serif;--wp--preset--font-family--space-mono: 'Space Mono', monospace;--wp--preset--font-family--syne: Syne, sans-serif;--wp--preset--font-family--texturina: Texturina, serif;--wp--preset--font-family--urbanist: Urbanist, sans-serif;--wp--preset--font-family--work-sans: 'Work Sans', sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-albert-sans-font-family{font-family: var(--wp--preset--font-family--albert-sans) !important;}.has-alegreya-font-family{font-family: var(--wp--preset--font-family--alegreya) !important;}.has-arvo-font-family{font-family: var(--wp--preset--font-family--arvo) !important;}.has-bodoni-moda-font-family{font-family: var(--wp--preset--font-family--bodoni-moda) !important;}.has-bricolage-grotesque-font-family{font-family: var(--wp--preset--font-family--bricolage-grotesque) !important;}.has-cabin-font-family{font-family: var(--wp--preset--font-family--cabin) !important;}.has-chivo-font-family{font-family: var(--wp--preset--font-family--chivo) !important;}.has-commissioner-font-family{font-family: var(--wp--preset--font-family--commissioner) !important;}.has-cormorant-font-family{font-family: var(--wp--preset--font-family--cormorant) !important;}.has-courier-prime-font-family{font-family: var(--wp--preset--font-family--courier-prime) !important;}.has-crimson-pro-font-family{font-family: var(--wp--preset--font-family--crimson-pro) !important;}.has-dm-mono-font-family{font-family: var(--wp--preset--font-family--dm-mono) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-dm-serif-display-font-family{font-family: var(--wp--preset--font-family--dm-serif-display) !important;}.has-domine-font-family{font-family: var(--wp--preset--font-family--domine) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-epilogue-font-family{font-family: var(--wp--preset--font-family--epilogue) !important;}.has-fahkwang-font-family{font-family: var(--wp--preset--font-family--fahkwang) !important;}.has-figtree-font-family{font-family: var(--wp--preset--font-family--figtree) !important;}.has-fira-sans-font-family{font-family: var(--wp--preset--font-family--fira-sans) !important;}.has-fjalla-one-font-family{font-family: var(--wp--preset--font-family--fjalla-one) !important;}.has-fraunces-font-family{font-family: var(--wp--preset--font-family--fraunces) !important;}.has-gabarito-font-family{font-family: var(--wp--preset--font-family--gabarito) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-ibm-plex-sans-font-family{font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;}.has-ibarra-real-nova-font-family{font-family: var(--wp--preset--font-family--ibarra-real-nova) !important;}.has-instrument-serif-font-family{font-family: var(--wp--preset--font-family--instrument-serif) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-josefin-sans-font-family{font-family: var(--wp--preset--font-family--josefin-sans) !important;}.has-jost-font-family{font-family: var(--wp--preset--font-family--jost) !important;}.has-libre-baskerville-font-family{font-family: var(--wp--preset--font-family--libre-baskerville) !important;}.has-libre-franklin-font-family{font-family: var(--wp--preset--font-family--libre-franklin) !important;}.has-literata-font-family{font-family: var(--wp--preset--font-family--literata) !important;}.has-lora-font-family{font-family: var(--wp--preset--font-family--lora) !important;}.has-merriweather-font-family{font-family: var(--wp--preset--font-family--merriweather) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-newsreader-font-family{font-family: var(--wp--preset--font-family--newsreader) !important;}.has-noto-sans-mono-font-family{font-family: var(--wp--preset--font-family--noto-sans-mono) !important;}.has-nunito-font-family{font-family: var(--wp--preset--font-family--nunito) !important;}.has-open-sans-font-family{font-family: var(--wp--preset--font-family--open-sans) !important;}.has-overpass-font-family{font-family: var(--wp--preset--font-family--overpass) !important;}.has-pt-serif-font-family{font-family: var(--wp--preset--font-family--pt-serif) !important;}.has-petrona-font-family{font-family: var(--wp--preset--font-family--petrona) !important;}.has-piazzolla-font-family{font-family: var(--wp--preset--font-family--piazzolla) !important;}.has-playfair-display-font-family{font-family: var(--wp--preset--font-family--playfair-display) !important;}.has-plus-jakarta-sans-font-family{font-family: var(--wp--preset--font-family--plus-jakarta-sans) !important;}.has-poppins-font-family{font-family: var(--wp--preset--font-family--poppins) !important;}.has-raleway-font-family{font-family: var(--wp--preset--font-family--raleway) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-roboto-slab-font-family{font-family: var(--wp--preset--font-family--roboto-slab) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-rufina-font-family{font-family: var(--wp--preset--font-family--rufina) !important;}.has-sora-font-family{font-family: var(--wp--preset--font-family--sora) !important;}.has-source-sans-3-font-family{font-family: var(--wp--preset--font-family--source-sans-3) !important;}.has-source-serif-4-font-family{font-family: var(--wp--preset--font-family--source-serif-4) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.has-syne-font-family{font-family: var(--wp--preset--font-family--syne) !important;}.has-texturina-font-family{font-family: var(--wp--preset--font-family--texturina) !important;}.has-urbanist-font-family{font-family: var(--wp--preset--font-family--urbanist) !important;}.has-work-sans-font-family{font-family: var(--wp--preset--font-family--work-sans) !important;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+</style>
+<link rel="stylesheet" id="pa-admin-bar-css" href="css/css-admin-bar.css" media="all">
+<link rel="stylesheet" id="hello-elementor-css" href="css/hello-elementor-style.min.css" media="all">
+<link rel="stylesheet" id="hello-elementor-theme-style-css" href="css/hello-elementor-theme.min.css" media="all">
+<link rel="stylesheet" id="hello-elementor-header-footer-css" href="css/hello-elementor-header-footer.min.css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="css/css-custom-frontend.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-7-css" href="css/css-post-7.css" media="all">
+<link rel="stylesheet" id="jetpack_likes-css" href="https://c0.wp.com/p/jetpack/14.2/modules/likes/style.css" media="all">
+<link rel="stylesheet" id="widget-image-css" href="css/css-widget-image.min.css" media="all">
+<link rel="stylesheet" id="widget-image-box-css" href="css/css-custom-widget-image-box.min.css" media="all">
+<link rel="stylesheet" id="widget-icon-list-css" href="css/css-custom-widget-icon-list.min.css" media="all">
+<link rel="stylesheet" id="widget-mega-menu-css" href="css/css-custom-pro-widget-mega-menu.min.css" media="all">
+<link rel="stylesheet" id="widget-heading-css" href="css/css-widget-heading.min.css" media="all">
+<link rel="stylesheet" id="widget-divider-css" href="css/css-widget-divider.min.css" media="all">
+<link rel="stylesheet" id="widget-social-icons-css" href="css/css-widget-social-icons.min.css" media="all">
+<link rel="stylesheet" id="e-apple-webkit-css" href="css/css-custom-apple-webkit.min.css" media="all">
+<link rel="stylesheet" id="widget-text-editor-css" href="css/css-widget-text-editor.min.css" media="all">
+<link rel="stylesheet" id="widget-lottie-css" href="css/css-widget-lottie.min.css" media="all">
+<link rel="stylesheet" id="swiper-css" href="css/css-swiper.min.css" media="all">
+<link rel="stylesheet" id="e-swiper-css" href="css/conditionals-e-swiper.min.css" media="all">
+<link rel="stylesheet" id="widget-testimonial-carousel-css" href="css/css-custom-pro-widget-testimonial-carousel.min.css" media="all">
+<link rel="stylesheet" id="widget-carousel-module-base-css" href="css/css-widget-carousel-module-base.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-12-css" href="css/css-post-12.css" media="all">
+<link rel="stylesheet" id="elementor-post-20-css" href="css/css-post-20.css" media="all">
+<link rel="stylesheet" id="elementor-post-24-css" href="css/css-post-24.css" media="all">
+<style id="jetpack-global-styles-frontend-style-inline-css">
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts-api.wp.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.7.1" media="all">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script id="jetpack-mu-wpcom-settings-js-before">
+var JETPACK_MU_WPCOM_SETTINGS = {"assetsUrl":"https:\/\/esuccess.ai\/wp-content\/mu-plugins\/wpcomsh\/vendor\/automattic\/jetpack-mu-wpcom\/src\/build\/"};
+</script>
+<script src="js/jquery-jquery.min.js" id="jquery-core-js"></script>
+<script src="js/jquery-jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://esuccess.ai/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://esuccess.ai/wp-json/wp/v2/pages/12"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://esuccess.ai/xmlrpc.php?rsd">
+
+<link rel="shortlink" href="https://wp.me/PfEk6j-c">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://esuccess.ai/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fesuccess.ai%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://esuccess.ai/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fesuccess.ai%2F&amp;format=xml">
+	<style>img#wpstats{display:none}</style>
+		<meta name="generator" content="Elementor 3.26.4; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<script>!function(){window.semaphore=window.semaphore||[],window.ketch=fun
+ction(){window.semaphore.push(arguments)};var e=new
+URLSearchParams(document.location.search),o=e.has("property")?e.get("prope
+rty"):"website_smart_tag",n=document.createElement("script");n.type="text/
+javascript",n.src="https://global.ketchcdn.com/web/v2/config/esuccessaitec
+hnologies/".concat(o,"/boot.js"),n.defer=n.async=!0,document.getElementsBy
+TagName("head")[0].appendChild(n)}();</script>
+<script> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('bElvO730Qmq4ZMqj'); </script>
+<script>!function(){window.semaphore=window.semaphore||[],window.ketch=function(){window.semaphore.push(arguments)};n=document.createElement("script");n.type="text/javascript",n.src="https://global.ketchcdn.com/web/v3/config/esuccessaitechnologies/website_smart_tag/boot.js",n.defer=n.async=!0,document.getElementsByTagName("head")[0].appendChild(n)}();
+</script>
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16605412678"></script>
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+	gtag('config', 'AW-16605412678');
+ </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KDPY2S14C0"></script> <script>
+window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date()); gtag('config', 'G-KDPY2S14C0');
+
+</script>
+
+<!-- Hotjar Tracking Code for https://www.esuccess.ai/ -->
+<script>
+(function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+h._hjSettings={hjid:3928229,hjsv:6}; a=o.getElementsByTagName('head')[0];
+r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); </script>
+
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="favicons/03-fav.png" sizes="32x32">
+<link rel="icon" href="favicons/03-fav.png" sizes="192x192">
+<link rel="apple-touch-icon" href="favicons/03-fav.png">
+<meta name="msapplication-TileImage" content="https://i0.wp.com/esuccess.ai/wp-content/uploads/2024/03/fav.png?fit=144%2C144&amp;ssl=1">
+<style type="text/css" id="wp-custom-css">.drop-down-list-menu a:hover{font-weight:600 !important; text-decoration: underline !important; }
+
+.drop-down-list-menu a{color: #fff; }
+
+.rr-section{position: relative; display: inline-block; font-family: "AvenirLTStd-Book", Sans-serif; color:#9400D6; font-weight:500; text-transform: uppercase;}
+
+.rr-section a{color:#9400D6; font-weight:500; border-bottom: 1px solid #9400D6; font-size:15px;}
+
+.rr-section a:hover{border-bottom: 1px solid #fff;}
+
+  .usd {position: absolute; top: -0.5em; right: -20px;  background-image: url("/wp-content/uploads/2024/03/right-arrow.png"); background-size: 16px; width:16px; height:14px; background-repeat: no-repeat;}
+
+
+
+@media screen and (max-width: 1180px) {
+
+.rr-section a{font-size:14px;}
+
+}
+
+@media screen and (max-width: 1080px) {
+
+.rr-section a{font-size:12px;}
+
+.usd{background-size: 12px; width: 12px; height: 12px; right: -15px; top:0;}
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+.services-cirlce{height: 145px !important;}
+
+.services-cirlce-red img{}
+
+
+}</style>
+
+
+
+	<title>FroovsInnovation &mdash; "Your trusted partner in the journey of automation, digitization, and AI transformation."</title>
+</head>
+<body>
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<nav class="site-nav">
+		<div class="container">
+			<div class="site-navigation">
+				<a href="index.html" class="logo m-0 float-left">FroovsInnovation</a>
+
+				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+					<li class="active"><a href="index.html">Home</a></li>
+					<!--<li class="has-children">
+						<a href="#">Dropdown</a>
+						<ul class="dropdown">
+							<li><a href="#">Menu One</a></li>
+							<li class="has-children">
+								<a href="#">Menu Two</a>
+								<ul class="dropdown">
+									<li><a href="#">Sub Menu One</a></li>
+									<li><a href="#">Sub Menu Two</a></li>
+									<li><a href="#">Sub Menu Three</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Menu Three</a></li>
+						</ul>
+					</li>
+					<li><a href="services.html">Services</a></li>-->
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+
+				<a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+					<span></span>
+				</a>
+
+			</div>
+		</div>
+	</nav>
+
+	<div class="hero overlay">
+		
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
+					<h1 class="heading text-white">FroovsInnovation</h1>
+					<p class="text-white-50 mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+
+					<p><a href="#our-services-section" class="btn custom-white-2">See our services</a></p>
+				</div>
+				<div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+					<a href="https://www.youtube.com/watch?v=mwtbEGNABWU&amp;t=12s" class="video-play-wrap glightbox">
+						<span id="play-video" class="icon-play"></span>
+						<img src="images/images-video_1.jpg" alt="Image" class="img-fluid">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--<div class="section pb-0 bg-light">
+    <div class="container">
+        <div class="row g-1 justify-content-center">
+            <!-- Automation Section --
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                <div class="step h-100 automation">
+                    <span class="flaticon-job-search"></span>
+                    <h3><a href="#">
+                        <img src="images/automation.jpeg" alt="Automation Image" style="width: 24px; height: 24px; margin-right: 10px;">
+                        Automation
+                    </a></h3>
+                    <p>"At FroovsInnovation, we specialize in delivering innovative automation solutions that streamline operations, enhance efficiency, and reduce costs.</p>
+                    <p class="full-description" style="display: none;">
+                        Our expert team utilizes cutting-edge technologies to create customized automation systems tailored to your unique business requirements. From process automation to workflow optimization and robotic process automation (RPA), we are committed to driving growth and transforming your business for the future."
+                    </p>
+                    <a href="javascript:void(0);" class="more" onclick="toggleDescription('automation')">
+                        <span class="icon-keyboard_backspace"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Digitization Section --
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="step h-100 digitization">
+                    <span class="flaticon-job-search"></span>
+                    <h3><a href="#">Digitization</a></h3>
+                    <p>"At FroovsInnovation, we are passionate about driving digital transformation through cutting-edge digitization solutions.</p>
+                    <p class="full-description" style="display: none;">
+                        We help businesses embrace the digital age by converting traditional processes, documents, and workflows into efficient, digital formats. Our solutions are designed to enhance data accessibility, improve decision-making, and streamline operations. Whether it's document management, data integration, or digital process automation, FroovsInnovation is your partner in building a fully digitized, future-ready business."
+                    </p>
+                    <a href="javascript:void(0);" class="more" onclick="toggleDescription('digitization')">
+                        <span class="icon-keyboard_backspace"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- AI & Machine Learning Section --
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="step h-100 ai-ml">
+                    <span class="flaticon-rocket"></span>
+                    <h3><a href="#">AI & Machine Learning Solutions</a></h3>
+                    <p>"At FroovsInnovation, we harness the power of AI, Machine Learning, and Deep Learning to unlock new possibilities for your business.</p>
+                    <p class="full-description" style="display: none;">
+                        Our team of experts builds intelligent solutions that analyze data, identify patterns, and make real-time predictions to drive smarter decision-making. Whether it's predictive analytics, natural language processing, or deep neural networks, we provide customized AI solutions that help automate processes, enhance customer experiences, and accelerate business growth. Let us guide you through the journey of leveraging advanced technologies to transform your operations and stay ahead in the digital era."
+                    </p>
+                    <a href="javascript:void(0);" class="more" onclick="toggleDescription('ai-ml')">
+                        <span class="icon-keyboard_backspace"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- BI & Dashboarding Section --
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                <div class="step h-100 bi-dashboard">
+                    <span class="flaticon-growth"></span>
+                    <h3><a href="#">Business Intelligence & Dashboarding Solutions</a></h3>
+                    <p>"At FroovsInnovation, we specialize in creating powerful Business Intelligence (BI) dashboards that provide insightful, data-driven decisions.</p>
+                    <p class="full-description" style="display: none;">
+                        Our team designs custom dashboards that visualize complex data in an intuitive and actionable format. By integrating real-time data, advanced analytics, and interactive visualizations, we help businesses track performance, identify trends, and make informed strategic decisions. Let us empower your organization with BI solutions that turn data into meaningful insights."
+                    </p>
+                    <a href="javascript:void(0);" class="more" onclick="toggleDescription('bi-dashboard')">
+                        <span class="icon-keyboard_backspace"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+
+	<script>
+		// Toggle description for the respective section
+		function toggleDescription(section) {
+			var fullDescription = document.querySelector('.' + section + ' .full-description');
+			var button = document.querySelector('.' + section + ' .more');
+
+			if (fullDescription.style.display === "none") {
+				fullDescription.style.display = "block";
+				button.innerHTML = '<span class="icon-keyboard_backspace"></span> '; // Change button text when expanded
+			} else {
+				fullDescription.style.display = "none";
+				button.innerHTML = '<span class="icon-keyboard_backspace"></span> '; // Change button text when collapsed
+			}
+		}
+	</script>
+
+
+
+
+	<div id="our-services-section" class="section bg-light">
+    <div class="container">
+        <div class="row justify-content-center align-items-center mb-5">
+            <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="0">
+                <h2 class="heading mb-2 text-secondary">Our Services</h2>
+            </div>
+        </div>
+
+        <!-- Automation Section -->
+        <div class="row justify-content-between mb-4">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/svg-undraw_blogging_vpvv.svg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="number">
+                    <span>1</span>
+                </div>
+                <h3 class="heading-2 text-primary mb-3">Automation</h3>
+                <p class="short-description">
+                    "At FroovsInnovation, we specialize in delivering innovative automation solutions that streamline operations, enhance efficiency, and reduce costs."
+                </p>
+                <p class="full-description" style="display: none;">
+                    Our expert team utilizes cutting-edge technologies to create customized automation systems tailored to your unique business requirements. From process automation to workflow optimization and robotic process automation (RPA), we are committed to driving growth and transforming your business for the future.
+                </p>
+                <a href="javascript:void(0);" class="btn custom-primary toggle-btn" onclick="toggleContent(this)">
+                    See More <span class="icon-keyboard_arrow_down"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Consulting Section -->
+        <div class="row justify-content-between mb-4">
+            <div class="col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/svg-undraw_blogging_vpvv.svg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                <div class="number">
+                    <span>2</span>
+                </div>
+                <h3 class="heading-2 text-primary mb-3">Consulting</h3>
+                <p class="short-description">
+                    "We provide expert consulting services to guide your business through complex challenges and opportunities."
+                </p>
+                <p class="full-description" style="display: none;">
+                    Our consulting services are designed to help you develop effective strategies, improve operations, and achieve your goals. Whether it's business transformation, technology adoption, or market expansion, we bring expertise and insight to every project.
+                </p>
+                <a href="javascript:void(0);" class="btn custom-primary toggle-btn" onclick="toggleContent(this)">
+                    See More <span class="icon-keyboard_arrow_down"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Data Analytics Section -->
+        <div class="row justify-content-between mb-4">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                <img src="images/svg-undraw_blogging_vpvv.svg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
+                <div class="number">
+                    <span>3</span>
+                </div>
+                <h3 class="heading-2 text-primary mb-3">Data Analytics</h3>
+                <p class="short-description">
+                    "Unlock the power of data with our advanced analytics solutions."
+                </p>
+                <p class="full-description" style="display: none;">
+                    From data visualization to predictive modeling, our data analytics services enable informed decision-making and uncover hidden opportunities. Harness the insights from your data to drive business success.
+                </p>
+                <a href="javascript:void(0);" class="btn custom-primary toggle-btn" onclick="toggleContent(this)">
+                    See More <span class="icon-keyboard_arrow_down"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Custom Software Development Section -->
+        <div class="row justify-content-between mb-4">
+            <div class="col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/svg-undraw_blogging_vpvv.svg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-delay="400">
+                <div class="number">
+                    <span>4</span>
+                </div>
+                <h3 class="heading-2 text-primary mb-3">Custom Software Development</h3>
+                <p class="short-description">
+                    "Create tailored software solutions that align perfectly with your business needs."
+                </p>
+                <p class="full-description" style="display: none;">
+                    Our software development team specializes in building robust, scalable, and user-friendly applications that solve real-world problems. From design to deployment, we deliver exceptional results.
+                </p>
+                <a href="javascript:void(0);" class="btn custom-primary toggle-btn" onclick="toggleContent(this)">
+                    See More <span class="icon-keyboard_arrow_down"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<script>
+    function toggleContent(button) {
+        const parent = button.closest('div');
+        const shortDescription = parent.querySelector('.short-description');
+        const fullDescription = parent.querySelector('.full-description');
+        const isHidden = fullDescription.style.display === "none";
+
+        if (isHidden) {
+            shortDescription.style.display = "none";
+            fullDescription.style.display = "block";
+            button.innerHTML = 'See Less <span class="icon-keyboard_arrow_up"></span>';
+        } else {
+            shortDescription.style.display = "block";
+            fullDescription.style.display = "none";
+            button.innerHTML = 'See More <span class="icon-keyboard_arrow_down"></span>';
+        }
+    }
+</script>
+
+	<div class="section sec-products">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-7 mx-auto text-center" data-aos="fade-up" data-aos-delay="0">
+					<h2 class="heading text-secondary">Our Products</h2>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+					<div class="pricing-item border-0 bg-white text-center">
+						<h3>Basic</h3>
+						<div class="price">
+							$19.99 <span>/ month</span>
+						</div>
+						<p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+						<ul class="list-check primary list-unstyled mb-5 text-start">
+							<li>Vokalia and Consonantia</li>
+							<li>Bookmarksgrove right at the coast</li>
+							<li>Semantics a large language ocean</li>
+						</ul>
+						<p><a href="#" class="btn custom-secondary">Get started</a></p>
+					</div>
+				</div>
+				<div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+					<div class="pricing-item border-0 bg-white text-center">
+						<h3>Standard</h3>
+						<div class="price text-primary">
+							$299.99 <span>/ month</span>
+						</div>
+						<p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+						<ul class="list-check primary list-unstyled mb-5 text-start">
+							<li>Vokalia and Consonantia</li>
+							<li>Bookmarksgrove right at the coast</li>
+							<li>Semantics a large language ocean</li>
+						</ul>
+						<p><a href="#" class="btn custom-primary">Get started</a></p>
+					</div>
+				</div>
+				<div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+					<div class="pricing-item border-0 bg-white text-center">
+						<h3>Advanced</h3>
+						<div class="price">
+							$799.99 <span>/ month</span>
+						</div>
+						<p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+						<ul class="list-check primary list-unstyled mb-5 text-start">
+							<li>Vokalia and Consonantia</li>
+							<li>Bookmarksgrove right at the coast</li>
+							<li>Semantics a large language ocean</li>
+						</ul>
+						<p><a href="#" class="btn custom-secondary">Get started</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+		<div class="py-5 bg-secondary">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-7 text-center mb-3 mb-lg-0 text-lg-start" data-aos="fade-up" data-aos-delay="0">
+					<h3 class="text-white m-0">Let's get to work</h3>
+					<p class="mb-0 text-white-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+				</div>
+				<div class="col-lg-5 text-center text-lg-end" data-aos="fade-up" data-aos-delay="100">
+					<a href="#" class="btn custom-white-2">Get started</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="site-footer">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="widget">
+						<h3>About Foundation<span class="text-primary">.</span> </h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					</div> <!-- /.widget -->
+					<div class="widget">
+						<h3>Connect</h3>
+						<ul class="list-unstyled social">
+							<!--
+							<li><a href="#"><span class="icon-pinterest"></span></a></li>
+							<li><a href="#"><span class="icon-dribbble"></span></a></li>
+							<li><a href="#"><span class="icon-twitter"></span></a></li>
+							<li><a href="#"><span class="icon-facebook"></span></a></li>-->
+							<li><a href="#"><span class="icon-linkedin"></span></a></li>
+							<li><a href="#"><span class="icon-instagram"></span></a></li>
+
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+				<div class="col-lg-2 ml-auto">
+					<div class="widget">
+						<h3>Links</h3>
+						<ul class="list-unstyled float-left links">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+				<div class="col-lg-2">
+					<div class="widget">
+						<!--<h3>Company</h3>
+						<ul class="list-unstyled float-left links">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul> -->
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3
+
+
+				<div class="col-lg-3">
+					<div class="widget">
+						<h3>Contact</h3>
+						<address>91 sector 2 Vaishali,Ghaziabad, UttarPradesh , India 201010</address>
+						<ul class="list-unstyled links mb-4">
+							<li><a href="tel://11234567890">+91 9540013122</a></li>
+							<li><a href="tel://11234567890">+91 7982920820</a></li>
+							<li><a href="/cdn-cgi/l/email-protection#f59c9b939ab5988c919a98949c9bdb969a98"><span class="__cf_email__" data-cfemail="caa3a4aca58aa7b3aea5a7aba3a4e4a9a5a7">[email&#160;protected]</span></a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+			</div> <!-- /.row -->
+
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<p>
+						Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | FroovsInnovation</a></p>
+
+					</div>
+				</div>
+			</div> <!-- /.container -->
+		</div> <!-- /.site-footer -->
+
+		<!-- Preloader -->
+		<div id="overlayer"></div>
+		<div class="loader">
+			<div class="spinner-border text-primary" role="status">
+				<span class="visually-hidden">Loading...</span>
+			</div>
+		</div>
+
+
+
+
+		<script src="js/8108-js-bootstrap.bundle.min.js"></script>
+		<script src="js/5297-js-tiny-slider.js"></script>
+		<script src="js/8337-js-aos.js"></script>
+		<script src="js/9207-js-navbar.js"></script>
+		<script src="js/8667-js-counter.js"></script>
+		<script src="js/8208-js-glightbox.min.js"></script>
+
+		<script src="js/2606-js-custom.js"></script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-23581568-13');
+		</script>
+	</body>
+	</html>
